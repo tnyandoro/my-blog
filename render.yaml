@@ -1,7 +1,6 @@
 databases:
   - name: postgres
     ipAllowlist: []
-
 services:
   - type: web
     name: rails
@@ -15,7 +14,6 @@ services:
         fromDatabase:
           name: postgres
           property: connectionString
-
   - type: redis
   - name: redis
   ipAllowList: []
